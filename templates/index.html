@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Calculator</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color */
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+  }
+
+  .watermark {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+  }
+
+  .good-luck {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="title">Percentage Calculator</h2>
+  <form action="/submit" method="post">
+    <input type="text" name="english" class="input-field" placeholder="English marks (out of 100)">
+    <input type="text" name="hindi" class="input-field" placeholder="Hindi marks (out of 100)">
+    <input type="text" name="math" class="input-field" placeholder="Math marks (out of 100)">
+    <input type="text" name="science" class="input-field" placeholder="Science marks (out of 100)">
+    <input type="text" name="social_science" class="input-field" placeholder="Social Science marks (out of 100)">
+    <input type="submit" value="Calculate Percentage" class="submit-btn">
+  </form>
+  <p class="quote">"Education is the key to unlocking the world, a passport to freedom." - Oprah Winfrey</p>
+  <p class="watermark">Percentage calculator made by Suhail Malik | Use for everyone</p>
+</div>
+
+<p class="good-luck">All the best!</p>
+
+</body>
+</html>

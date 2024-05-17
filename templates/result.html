@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color */
+  }
+
+  .result {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pass {
+    color: #28a745; /* Green color */
+  }
+
+  .fail {
+    color: #dc3545; /* Red color */
+  }
+
+  .quote {
+    font-style: italic;
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+  }
+
+  .watermark {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Percentage: {{ percentage }}%</h2>
+  <p class="result">
+    {% if percentage >= 33 %}
+      Congratulations! You have passed.
+    {% else %}
+      Sorry! You have failed.
+    {% endif %}
+  </p>
+  <p class="quote">"Education is the key to unlocking the world, a passport to freedom." - Oprah Winfrey</p>
+  <p class="watermark">Percentage calculator made by Suhail Malik | Use for everyone</p>
+</div>
+
+</body>
+</html>
